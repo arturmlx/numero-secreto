@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap');
+:root {
+    --font-family: 'Montserrat Alternates', sans-serif;
+    --bg-color: #69710f;
+    --primary-color: #DEEEEA;
+}
+
+body {
+    background: rgb(32,178,195);
+    background: rgb(9, 147, 211);
+    color: var(--primary-color);
+    text-shadow: rgb(33, 33, 33) 0.1em 0.1em 1em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    margin: 5vh 0;
+    font-family: var(--font-family);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 3.5em;
+}
+
+h3 {
+    font-size: 3em;
+    margin-top: 0.5em;
+}
+
+.mensagem {
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+.voce-disse {
+    font-size: 1.5em;
+}
+
+.box {
+    border: 2px solid var(--primary-color);
+    display: inline-block;
+    font-size: 4em;
+    padding: 10px;
+    margin: 6vh;
+}
+
+.fa-up-long {
+    font-size: 1em;
+}
+
+.fa-down-long {
+    font-size: 1em;
+}
+
+.dica {
+    font-size: 2em;
+}
+
+.botao-jogar-novamente {
+    color: #4b504f;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 1em;
+    margin: 2em 0;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.botao-jogar-novamente:hover {
+    transition: 1s;
+    transform: scale(1.1);
+
+}
+
+/*Dispositivo móvel P e M*/
+@media screen and (max-width: 375px) {
+    body {
+        justify-content: flex-start;
+        margin-top: 5vh;
+    }
+    
+    h1 {
+        font-size: 4em;
+        margin-bottom: 3vh;
+    }
+
+    h3 {
+        margin-bottom: 3vh;
+    }
+
+    .voce-disse {
+        font-size: 1.5em;
+    }
+
+    .box {
+        margin-bottom: 6vh;
+    }
+
+    .dica, .fa-up-long, .fa-down-long {
+        font-size: 1.2em;
+    }
+}
+
+/*Dispositivo móvel G*/
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    body {
+        justify-content: flex-start;
+        margin-top: 5vh;
+    }
+    
+    h1 {
+        font-size: 5em;
+        margin-bottom: 3vh;
+    }
+
+    h3 {
+        font-size: 4em;
+        margin-bottom: 3vh;
+    }
+
+    .voce-disse {
+        font-size: 2em;
+    }
+
+    .box {
+        margin-bottom: 8vh;
+    }
+
+    .dica, .fa-up-long, .fa-down-long {
+        font-size: 1.5em;
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        justify-content: flex-start;
+        margin-top: 1vh;
+    }
+
+    h1 {
+        font-size: 7em;
+        margin-bottom: 2vh;
+    }
+
+    h3 {
+        font-size: 5em;
+        margin-bottom: 2vh;
+    }
+
+    .voce-disse {
+        font-size: 2.5em;
+    }
+
+    .box {
+        font-size: 5em;
+        margin-bottom: 4vh;
+    }
+
+    .dica, .fa-up-long, .fa-down-long {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        justify-content: flex-start;
+        margin-top: 4vh;
+    }
+
+    h1 {
+        font-size: 7em;
+        margin-bottom: 2vh;
+    }
+
+    h3 {
+        font-size: 5em;
+        margin-bottom: 2vh;
+    }
+
+    .voce-disse {
+        font-size: 2.5em;
+    }
+
+    .box {
+        font-size: 5em;
+        margin-bottom: 4vh;
+    }
+
+    .dica {
+        font-size: 2em;
+    }
+
+    .fa-up-long, .fa-down-long {
+        font-size: 1em;
+    }
+    
+}
